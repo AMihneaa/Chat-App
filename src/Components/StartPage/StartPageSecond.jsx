@@ -1,8 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import SVGImagine1 from '../svg/imagine1';
 import SVGIMAGE2 from '../svg/imagine2';
 
 const FirstElement = () => {
+  return (
+    <div>
+      <section className="SecondElement-section">
+        <div className="SecondElementDiv ">
+          <SVGIMAGE2 className="SecondElement-svg" />
+          <div className="SecondElement-text">
+            <h2>Donare de sange, editia nu stiu care</h2>
+            <h6>*Insert Furtuna - copyrighting skills -</h6>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+const SecondElement = () => {
   return (
     <section className="FirstElement-section">
       <div className="fistElementDiv ">
@@ -22,22 +38,6 @@ const FirstElement = () => {
   );
 };
 
-const SecondElement = () => {
-  return (
-    <div>
-      <section className="SecondElement-section">
-        <div className="SecondElementDiv ">
-          <SVGIMAGE2 className="SecondElement-svg" />
-          <div className="SecondElement-text">
-            <h2>Donare de sange, editia nu stiu care</h2>
-            <h6>*Insert Furtuna - copyrighting skills -</h6>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
 const StartPageSecond = () => {
   const [showElement, setShowElement] = useState(true);
 
@@ -47,7 +47,7 @@ const StartPageSecond = () => {
     }, 3000);
   });
 
-  return showElement ? <SecondElement /> : <FirstElement />;
+  return showElement ? <FirstElement /> : <SecondElement />;
 };
 
 export default StartPageSecond;

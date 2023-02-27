@@ -3,20 +3,20 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import 'rsuite/dist/styles/rsuite-default.css';
 import StartPage from './Pages/StartPage';
 import Login from './Pages/Login';
-import Signin from './Pages/Signin';
+import SignIn from './Pages/Signup';
 import './styles/main.scss';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact="true" path="/signin">
-          <Signin />
+        <Route path="/signup">
+          <SignIn />
         </Route>
-        <Route exact="true" path="login">
+        <Route path="/login">
           <Login />
         </Route>
-        <Route exact="true" path="/">
+        <Route path="/">
           <StartPage />
         </Route>
         <Route>
