@@ -1,9 +1,11 @@
 import React from 'react';
 import SVGBlood from '../svg/blood-svg';
+import BGPrincipal from '../svg/ImaginePrincipala-svg';
 
 const StartPageFirst = () => {
   return (
     <div className="startpage-class">
+      <BGPrincipal className="BG-SVG" />
       <div className="center">
         <SVGBlood className="svg-blood center" />
         <div className="startpage-div-text">

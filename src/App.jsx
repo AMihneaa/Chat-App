@@ -4,19 +4,23 @@ import 'rsuite/dist/styles/rsuite-default.css';
 import StartPage from './Pages/StartPage';
 import Login from './Pages/Login';
 import SignIn from './Pages/Signup';
+import LoginRegister from './Pages/LoginRegister';
 import './styles/main.scss';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/signup">
+        <Route exact={true} path="/signup">
           <SignIn />
         </Route>
-        <Route path="/login">
+        <Route exact={true} path="/login">
           <Login />
         </Route>
-        <Route path="/">
+        <Route exact={true} path="/cont">
+          <LoginRegister />
+        </Route>
+        <Route exact={true} path="/">
           <StartPage />
         </Route>
         <Route>

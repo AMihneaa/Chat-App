@@ -1,6 +1,7 @@
 .startpage-class {
   width: auto;
-  background-image: url('./img/startpage/startpage-bg.jpg');
+  // background-image: url('./img/startpage/startpage-bg.jpg');
+  background-image: linear-gradient(79deg, #f23b58, #bf0a27 48%, #a60520);
   height: 100%;
 
   /* Center and scale the image nicely */
@@ -22,6 +23,11 @@
 .svg-blood {
   width: 100px;
   height: 100px;
+}
+
+.BG-SVG {
+  transform: rotate(180deg);
+  bottom: 0px;
 }
 
 .startpage-div-text {
@@ -77,17 +83,17 @@
 }
 
 .SecondElement-section {
-  width: 30%;
+  width: 100%;
   height: auto;
   /* Center vertically and horizontally */
   position: absolute;
-  left: 35%;
   margin: -25px 0 0 -25px;
 }
 
 .SecondElementDiv {
+  left: 26%;
   top: 90px;
-  left: 25%;
+  right: 10px;
   position: relative;
   width: 50%;
   height: 100%;
@@ -102,10 +108,10 @@
 }
 
 .SecondElement-text {
-  left: 5px;
+  position: relative;
   text-align: center;
   height: auto;
-  width: 300px;
+  width: auto;
   text-align: center;
 }
 
@@ -115,4 +121,36 @@
 
 .SecondElement-text > h6 {
   margin-top: 15px;
+}
+
+.skip-btn {
+  width: 15%;
+  border: 1px solid red;
+  color: red;
+  margin-top: 50px;
+  margin-right: 100px;
+  background-color: white;
+}
+.next-btn {
+  width: 15%;
+  border: 1px white;
+  color: white;
+  background-color: #f44336;
+}
+
+.skip2-btn {
+  width: 15%;
+
+  margin-top: 35px;
+  margin-right: 100px;
+  background-color: white;
+  border: 1px white;
+  color: white;
+  background-color: #f44336;
+}
+.next2-btn {
+  width: 15%;
+  border: 1px solid red;
+  color: red;
+  background-color: white;
 }

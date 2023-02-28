@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const SignIn = props => {
+const SignIn = () => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [tel, setTel] = useState('');
@@ -15,18 +16,24 @@ const SignIn = props => {
 
   return (
     <div className="LoginRegister">
-      <div className="auth-form-container">
+      <div className="auth-form-container border-solid-white">
         <form className="register-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Full name</label>
+          <label className="" htmlFor="name">
+            Full name
+          </label>
           <input
+            className=""
             value={name}
             name="name"
             onChange={e => setName(e.target.value)}
             id="name"
             placeholder="full Name"
           />
-          <label htmlFor="email">email</label>
+          <label className="" htmlFor="email">
+            email
+          </label>
           <input
+            className=""
             value={email}
             onChange={e => setEmail(e.target.value)}
             type="email"
@@ -34,8 +41,11 @@ const SignIn = props => {
             id="email"
             name="email"
           />
-          <label htmlFor="phone">Telefon</label>
+          <label className="" htmlFor="phone">
+            Telefon
+          </label>
           <input
+            className=""
             value={tel}
             onChange={e => setTel(e.target.value)}
             type="tel"
@@ -43,8 +53,11 @@ const SignIn = props => {
             id="phone"
             name="telefon"
           />
-          <label htmlFor="password">password</label>
+          <label className="" htmlFor="password">
+            password
+          </label>
           <input
+            className=""
             value={pass}
             onChange={e => setPass(e.target.value)}
             type="password"
@@ -52,8 +65,11 @@ const SignIn = props => {
             id="password"
             name="password"
           />
-          <label htmlFor="confirmpassword">confirmare password</label>
+          <label className="" htmlFor="confirmpassword">
+            confirmare password
+          </label>
           <input
+            className=""
             value={confirmPass}
             onChange={e => {
               setConfirmPass(e.target.value);
@@ -69,14 +85,13 @@ const SignIn = props => {
           ) : (
             <h6></h6>
           )}
-          <button type="submit">Register</button>
+          <button className="info" type="submit">
+            Register
+          </button>
         </form>
-        <button
-          className="link-btn"
-          onClick={() => props.onFormSwitch('Login')}
-        >
+        <Link to="/login" className="link btn">
           Already have an account? Login here.
-        </button>
+        </Link>
       </div>
     </div>
   );

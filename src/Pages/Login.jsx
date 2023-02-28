@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -14,8 +15,11 @@ const Login = () => {
       <div className="auth-form-container">
         <h2>Login</h2>
         <form className="login-form" onSubmit={handleSubmit}>
-          <label htmlFor="email">email</label>
+          <label className="label12" htmlFor="email">
+            email
+          </label>
           <input
+            className="input12"
             value={email}
             onChange={e => setEmail(e.target.value)}
             type="email"
@@ -23,8 +27,11 @@ const Login = () => {
             id="email"
             name="email"
           />
-          <label htmlFor="password">password</label>
+          <label className="label12" htmlFor="password">
+            password
+          </label>
           <input
+            className="input12"
             value={pass}
             onChange={e => setPass(e.target.value)}
             type="password"
@@ -32,14 +39,13 @@ const Login = () => {
             id="password"
             name="password"
           />
-          <button type="submit">Log In</button>
+          <button className="info button12" type="submit">
+            Log In
+          </button>
         </form>
-        {/* <button
-        className="link-btn"
-        onClick={() => props.onFormSwitch('Register')}
-      >
-        Nu ai cont? Register here.
-      </button> */}
+        <Link to="/signup" className="link btn">
+          Already have an account? Login here.
+        </Link>
       </div>
     </div>
   );
