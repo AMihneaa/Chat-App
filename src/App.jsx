@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact={true} path="/signup">
+        <Route exact={true} url="/signup" path="/signup">
           <SignIn />
         </Route>
         <Route exact={true} path="/login">
@@ -21,14 +21,14 @@ function App() {
         <Route exact={true} path="/cont">
           <LoginRegister />
         </Route>
-        <Route exact={true} path="/home">
+        <Route path="/home">
           <Home />
         </Route>
-        <Route exact={true} path="/">
+        <Route path="">
           <StartPage />
         </Route>
         <Route>
-          <div>Pagina nu exista! :D </div>
+          <div>Pagina nu exista!</div>
         </Route>
       </Switch>
     </BrowserRouter>

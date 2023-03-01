@@ -1,19 +1,22 @@
-import React from 'react';
 import CarrouselComponent from '../Components/Home/Carrousel';
 import Navs from '../Components/Navs';
 import SVGBloodRed from '../Components/svg/blood-svg-red';
+import BoxLayout from '../Components/BoxLayout';
 
 function Home() {
   return (
     <div className="home">
       <section className="home-section">
-        <Navs />
+        <Navs className="Nav-pc" />
         <div className="taietura">
           <SVGBloodRed className="svg-logo" />
         </div>
 
         <CarrouselComponent />
-        <div className="info-btn-div"></div>
+        <div className="info-btn-div">
+          <BoxLayout />
+        </div>
+        <SVGBloodRed className="svg-logo-tel" />
       </section>
     </div>
   );

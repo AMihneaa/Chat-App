@@ -8,16 +8,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  user-select: none;
 }
 
 .center {
-  width: 300px;
-  height: 300px;
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  margin: -25px 0 0 -25px;
+  // width: 300px;
+  // height: 300px;
+  // /* Center vertically and horizontally */
+  // position: absolute;
+  // top: 30%;
+  // left: 40%;
+  // margin: -25px 0 0 -25px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .svg-blood {
@@ -38,7 +44,7 @@
 }
 
 .startpage-div-text > h2 {
-  margin-top: 200px;
+  // margin-top: 200px;
 }
 
 .firstElement-section {
@@ -183,6 +189,7 @@
   background-color: #f44336;
   box-shadow: 1px 2px 3px #a0a0a0;
   user-select: none;
+  letter-spacing: 1px;
 }
 .next2-btn {
   width: 15%;
@@ -191,6 +198,7 @@
   background-color: white;
   box-shadow: 1px 2px 3px #a0a0a0;
   user-select: none;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -225,6 +233,29 @@
     box-shadow: 0px 0px 0px 0px #7f7f7f;
   }
 
+  .fistElementDiv {
+    // top: 90px;
+    // left: 25%;
+    // position: relative;
+    // width: 50%;
+    // height: 100%;
+    margin: 5% 20% 5% 20%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Center vertically and horizontally */
+    text-align: center;
+
+    // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23808080FF' stroke-width='2' stroke-dasharray='10%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 20px;
+    padding: 40px;
+
+    box-shadow: 0px 0px 0px 0px #7f7f7f;
+  }
+
   .skip2-btn {
     width: 30%;
     margin-top: 35px;
@@ -241,4 +272,28 @@
     color: red;
     background-color: white;
   }
+
+  .center {
+    // width: 300px;
+    // height: 300px;
+    // /* Center vertically and horizontally */
+    // position: absolute;
+    // top: 30%;
+    // left: 40%;
+    // margin: -25px 0 0 -25px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    // border: 1px solid black;
+  }
+
+  .svg-blood {
+    width: 100px;
+    height: 100px;
+  }
 }
+
+//aici am editat

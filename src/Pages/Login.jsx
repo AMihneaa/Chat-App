@@ -16,7 +16,7 @@ const Login = () => {
         <h2>Login</h2>
         <form className="login-form" onSubmit={handleSubmit}>
           <label className="label12" htmlFor="email">
-            email
+            Email
           </label>
           <input
             className="input12"
@@ -28,7 +28,7 @@ const Login = () => {
             name="email"
           />
           <label className="label12" htmlFor="password">
-            password
+            Password
           </label>
           <input
             className="input12"
@@ -44,7 +44,7 @@ const Login = () => {
           </button>
         </form>
         <Link to="/signup" className="link btn">
-          Already have an account? Login here.
+          Don&apos;t have an account? Register now.
         </Link>
       </div>
     </div>
@@ -52,3 +52,5 @@ const Login = () => {
 };
 
 export default Login;
+
+//aici am editat
