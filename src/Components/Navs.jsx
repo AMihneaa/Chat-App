@@ -1,17 +1,33 @@
 import { Link } from 'react-router-dom';
+import '../styles/nav.scss';
 
-const LINKS = [
-  { to: '/', text: 'Home page' },
-  { to: '/starred', text: 'Starred page' },
+const LINKS1 = [
+  { to: '/home', text: 'Home page' },
+  { to: '/programare', text: 'Programare' },
+];
+
+const LINKS2 = [
+  { to: '/info', text: 'Informatii' },
+  { to: '/account', text: 'Cont' },
 ];
 
 const Navs = () => {
   return (
-    <div>
+    <div className="navigation-bar">
       <ul>
-        {LINKS.map(item => (
+        {LINKS1.map(item => (
           <li key={item.to}>
-            <Link to={item.to}>{item.text}</Link>
+            <Link className="navlink" to={item.to}>
+              {item.text}
+            </Link>
+          </li>
+        ))}
+        <li></li>
+        {LINKS2.map(item => (
+          <li key={item.to}>
+            <Link className="navlink" to={item.to}>
+              {item.text}
+            </Link>
           </li>
         ))}
       </ul>

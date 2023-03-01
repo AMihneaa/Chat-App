@@ -73,7 +73,6 @@ const SignIn = () => {
             value={confirmPass}
             onChange={e => {
               setConfirmPass(e.target.value);
-              setVerifPass(pass == confirmPass ? true : false);
             }}
             type="password"
             placeholder="********"
@@ -83,9 +82,16 @@ const SignIn = () => {
           {!verifPass ? (
             <h6 className="parolagresita-text">Parolele nu corespund</h6>
           ) : (
-            <h6></h6>
+            <span></span>
           )}
-          <button className="info" type="submit">
+          <button
+            className="info"
+            onClick={e => {
+              setConfirmPass(e.target.value);
+              setVerifPass(pass === confirmPass ? true : false);
+            }}
+            type="submit"
+          >
             Register
           </button>
         </form>
