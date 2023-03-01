@@ -42,7 +42,7 @@ const SecondElement = props => {
   });
 
   return (
-    <section className="FirstElement-section">
+    <section className="firstElement-section">
       <div className="fistElementDiv ">
         <SVGImagine1 className="imagine1-svg" />
         <div className="firstElement-text">
