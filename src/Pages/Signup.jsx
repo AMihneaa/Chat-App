@@ -30,7 +30,7 @@ const SignIn = () => {
             placeholder="full Name"
           />
           <label className="" htmlFor="email">
-            email
+            Email
           </label>
           <input
             className=""
@@ -54,7 +54,7 @@ const SignIn = () => {
             name="telefon"
           />
           <label className="" htmlFor="password">
-            password
+            Password
           </label>
           <input
             className=""
@@ -66,7 +66,7 @@ const SignIn = () => {
             name="password"
           />
           <label className="" htmlFor="confirmpassword">
-            confirmare password
+            Confirmare password
           </label>
           <input
             className=""
@@ -104,3 +104,5 @@ const SignIn = () => {
 };
 
 export default SignIn;
+
+//aici am editat
