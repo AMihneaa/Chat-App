@@ -8,7 +8,7 @@ const LINKS1 = [
 
 const LINKS2 = [
   { to: '/info', text: 'Informatii' },
-  { to: '/account', text: 'Cont' },
+  { to: '/myaccount', text: 'Cont' },
 ];
 
 const Navs = () => {
