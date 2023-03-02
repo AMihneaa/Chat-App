@@ -11,6 +11,7 @@ body {
   width: 80%;
   height: 80%;
   background-color: white;
+  border-radius: 30px;
 }
 
 .account-section {
@@ -25,9 +26,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  height: 50%;
+  height: 30%;
   width: 60%;
-  background-color: pink;
+  // background-color: pink;
 }
 
 .account-div-bloodtype {
@@ -61,4 +62,43 @@ body {
   border: 0;
   color: white;
   background-color: #f44336;
+}
+
+.account-div-info-name {
+  padding-top: 10;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  // background-color: green;
+}
+
+.account-div-info-name > h2 {
+  font-size: 30px;
+  padding: 5%;
+}
+
+.account-div-info-3 {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  // background-color: green;
+}
+
+.account-div-info-3 > h4 {
+  padding: 0 10px 0 10px;
+}
+
+.input-cont > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  height: 1em;
+  width: 30px;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
